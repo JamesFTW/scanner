@@ -1,5 +1,5 @@
 # Running Project
-Run `react-native run-ios` inside of scanner folder
+Run `react-native run-ios` inside of scanner folder <this current folder>
 
 
 ```
