@@ -9,7 +9,7 @@ import {
   View
 } from 'react-native';
 
-export default class backGround extends Component {
+export default class Background extends Component {
 
   render() {
     return (
