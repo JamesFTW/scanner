@@ -17,6 +17,9 @@ import ProfileHeader from '../components/profileHeader.js'
 //Will use to pass stuff later
   //Pass recipts and what not
     //Array of Objects for all the details needed for recipts
+
+  //Research if screens should fetch data or should that happen in the
+  //component
 const Message = ({value}) => <Text>{value}</Text>
 
 export default class ProfileScreen extends Component {
