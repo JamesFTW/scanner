@@ -13,15 +13,18 @@ export default class Background extends Component {
 
   render() {
     return (
-      <ScrollView style={styles.backGround}/>
+      <ScrollView style={styles.backGround}>
+        <Text>Hello World {this.props.message}</Text>
+      </ScrollView>
     )
   }
 }
 
 const styles = StyleSheet.create({
   backGround: {
-    display: 'flex',
     backgroundColor: '#F2F2F2',
-    flex: 1
+    display: 'flex',
+    flexDirection: 'column',
+    height: "100%"
   }
 })
