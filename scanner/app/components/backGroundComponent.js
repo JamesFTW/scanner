@@ -12,10 +12,11 @@ import {
 export default class Background extends Component {
 
   render() {
+    //This might not need to pass props
     return (
-      <ScrollView style={styles.backGround}>
-        <Text>Hello World {this.props.message}</Text>
-      </ScrollView>
+      <View style={styles.backGround}>
+        <Text style={{textAlign: 'center'}}>Hello World {this.props.message}</Text>
+      </View>
     )
   }
 }
@@ -23,8 +24,7 @@ export default class Background extends Component {
 const styles = StyleSheet.create({
   backGround: {
     backgroundColor: '#F2F2F2',
-    display: 'flex',
-    flexDirection: 'column',
-    height: "100%"
+    paddingTop: 80,
+    height: 1000
   }
 })
