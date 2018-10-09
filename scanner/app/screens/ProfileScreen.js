@@ -20,31 +20,70 @@ import ProfileHeader from '../components/profileHeader.js'
 
   //Research if screens should fetch data or should that happen in the
   //component
+    //Looks like screens fetch data
+
+    //Try again doing this fetch stuff with require
 const Message = ({value}) => <Text>{value}</Text>
 
+const profilePhoto = require('../img/myProfilePic.jpg')
+
 export default class ProfileScreen extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      imageUrl: profilePhoto
+    }
+  }
+
   render() {
     return (
-    <View style={styles.container}>
-      <ProfileHeader/>
-      <Background message={<Message value='James'/>}/>
-    </View>
+    <ScrollView>
+      <ScrollView contentContainer={styles.container}>
+        <ProfileHeader username="@jamesftw"/>
+        <Background message={<Message value='James'/>}/>
+      </ScrollView>
+
+      <View style={styles.profileWrapper}>
+        <View style={styles.photoPlaceHolder}>
+          <Image style={styles.photo} source={this.state.imageUrl} />
+        </View>
+      </View>
+    </ScrollView>
     )
   }
 }
 
 const styles = StyleSheet.create({
-  //Styles for component positioning
-  contanier: {
-    position: 'absolute',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center'
   },
-  header: {
-    height: 55,
-    alignContent: 'center',
-    justifyContent: 'center'
+  photo: {
+    height: 104.64,
+    width: 104.64,
+    marginTop: 5,
+    borderRadius: 105/2,
+    alignSelf: 'center'
+  },
+  photoPlaceHolder: {
+    width: 116,
+    height: 116,
+    borderRadius: 116/2,
+    backgroundColor: '#F2F2F2',
+    marginBottom: 20,
+  },
+  profileWrapper: {
+    alignSelf: 'center',
+    position: 'absolute',
+    paddingBottom: 100,
+    marginTop: 110,
+  },
+  photoBoarder: {
+    height: 104.64,
+    width: 104.64,
+    marginTop: 5,
+    borderRadius: 105/2,
+    alignSelf: 'center'
   }
 })
