@@ -1,1 +1,0 @@
-All static image assets will go here.
