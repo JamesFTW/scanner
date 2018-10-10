@@ -11,6 +11,7 @@ import {
 
 import Background    from '../components/backGroundComponent.js'
 import ProfileHeader from '../components/profileHeader.js'
+import ProfilePhoto  from '../components/profilephoto.js'
 
 //Passing a component as props.
 //Could just pass a sting if I wanted
@@ -42,12 +43,8 @@ export default class ProfileScreen extends Component {
         <ProfileHeader username="@jamesftw"/>
         <Background message={<Message value='James'/>}/>
       </ScrollView>
-
-      <View style={styles.profileWrapper}>
-        <View style={styles.photoPlaceHolder}>
-          <Image style={styles.photo} source={this.state.imageUrl} />
-        </View>
-      </View>
+      
+      <ProfilePhoto imageUrl={this.state.imageUrl}/>
     </ScrollView>
     )
   }
