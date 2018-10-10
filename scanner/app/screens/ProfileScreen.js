@@ -43,7 +43,7 @@ export default class ProfileScreen extends Component {
         <ProfileHeader username="@jamesftw"/>
         <Background message={<Message value='James'/>}/>
       </ScrollView>
-      
+
       <ProfilePhoto imageUrl={this.state.imageUrl}/>
     </ScrollView>
     )
@@ -55,32 +55,5 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center'
-  },
-  photo: {
-    height: 104.64,
-    width: 104.64,
-    marginTop: 5,
-    borderRadius: 105/2,
-    alignSelf: 'center'
-  },
-  photoPlaceHolder: {
-    width: 116,
-    height: 116,
-    borderRadius: 116/2,
-    backgroundColor: '#F2F2F2',
-    marginBottom: 20,
-  },
-  profileWrapper: {
-    alignSelf: 'center',
-    position: 'absolute',
-    paddingBottom: 100,
-    marginTop: 110,
-  },
-  photoBoarder: {
-    height: 104.64,
-    width: 104.64,
-    marginTop: 5,
-    borderRadius: 105/2,
-    alignSelf: 'center'
   }
 })
