@@ -19,11 +19,6 @@ import ProfilePhoto  from '../components/profilephoto.js'
   //Pass recipts and what not
     //Array of Objects for all the details needed for recipts
 
-  //Research if screens should fetch data or should that happen in the
-  //component
-    //Looks like screens fetch data
-
-    //Try again doing this fetch stuff with require
 const Message = ({value}) => <Text>{value}</Text>
 
 const profilePhoto = require('../img/myProfilePic.jpg')
