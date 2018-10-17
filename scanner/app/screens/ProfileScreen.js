@@ -13,11 +13,8 @@ import Background    from '../components/backGroundComponent.js'
 import ProfileHeader from '../components/profileHeader.js'
 import ProfilePhoto  from '../components/profilephoto.js'
 
-//Passing a component as props.
-//Could just pass a sting if I wanted
-//Will use to pass stuff later
-  //Pass recipts and what not
-    //Array of Objects for all the details needed for recipts
+//Pass recipts and what not
+  //Array of Objects for all the details needed for recipts
 
 const Message = ({value}) => <Text>{value}</Text>
 
