@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/node_modules/react-native/Libraries/Text/Text/RCTTextView.m \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/node_modules/react-native/Libraries/Text/Text/RCTTextView.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/node_modules/react-native/Libraries/Text/Text/RCTTextShadowView.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/node_modules/react-native/Libraries/Text/BaseText/RCTBaseTextShadowView.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
+  /Users/jamesftw/Desktop/State/csc642/scanner/scanner/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h
