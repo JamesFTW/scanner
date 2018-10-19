@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node server.js && node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "start:dev": "nodemon server.js"
   },
   "dependencies": {
     "express": "^4.16.4",
@@ -17,7 +18,9 @@
   "devDependencies": {
     "babel-jest": "23.0.1",
     "babel-preset-react-native": "4.0.0",
+    "dotenv": "^6.1.0",
     "jest": "23.1.0",
+    "nodemon": "^1.18.4",
     "react-test-renderer": "16.3.1"
   },
   "jest": {
