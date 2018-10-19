@@ -3,12 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "node server.js && node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "react": "16.3.1",
-    "react-native": "0.55.4"
+    "react-native": "0.55.4",
+    "helmet": "^3.9.0",
+    "pg": "^7.4.0",
+    "pg-promise": "^7.3.1"
   },
   "devDependencies": {
     "babel-jest": "23.0.1",
@@ -19,7 +23,9 @@
   "jest": {
     "preset": "react-native"
   },
-  "rnpm" : {
-    "assets": ["./assets/fonts"]
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
   }
 }
