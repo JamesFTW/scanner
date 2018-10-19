@@ -1,4 +1,6 @@
 
+require('dotenv').config()
+
 const express = require('express')
 const pg      = require('pg')
 const pgp     = require("pg-promise")()
