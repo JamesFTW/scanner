@@ -8,8 +8,8 @@ const helmet  = require('helmet')
 const app  = express()
 const port = process.env.PORT || 3000
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
   res.send('Hello World! \n' + process.env.DATABASE_URL)
 })
 
-app.listen(port, () => `Listening on port ${port}`)
+app.listen(port, () => console.log(`Listening on port ${port}`))
