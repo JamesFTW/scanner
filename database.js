@@ -1,12 +1,14 @@
 
 //Profile
 {
-  "name": "James",
+  "first_name": "James",
+  "last_name": "Andrews",
   "userId": "324423",
   "email": "bdaddyja@gmail.com",
   "password": "somehash",
   "profilePhoto": "link_to_photo"
 }
+//In order to query database, table name has to be surrounded by double quotes. "users"
 
 //Invoice
 {
