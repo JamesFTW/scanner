@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   res.send('Hello World! \n' + process.env.DATABASE_URL)
 })
 
-router.get('/test', s3.single('avatar'), (req, res, next) => {
+router.post('/test', s3.single('avatar'), (req, res, next) => {
   //this route will be used for posting profile photos
   return res.json({'imageUrl': req.file})
 })
