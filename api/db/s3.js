@@ -3,12 +3,12 @@
    require('dotenv').config()
  }
 
-const accessKey = process.env.AWSAccessKeyId
-const secretKey = process.env.AWSSecretKey
-
 const multer = require('multer')
 const multerS3 = require('multer-s3')
 const aws = require('aws-sdk')
+
+const accessKey = process.env.AWSAccessKeyId
+const secretKey = process.env.AWSSecretKey
 
 const creds = new aws.Credentials(accessKey, secretKey, null)
 
