@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node app/server.js && node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "start:dev": "NODE_ENV=development DEBUG=APP_NAME:* nodemon app/server.js",
+    "start:dev": "NODE_ENV=development DEBUG=APP_NAME:* nodemon api/server.js",
     "db:create:migration": "sequelize migration:generate --name ",
     "db:migrate": "sequelize db:migrate",
     "db:rollback": "sequelize db:migrate:undo"
