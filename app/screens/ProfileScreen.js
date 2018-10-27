@@ -12,6 +12,8 @@ import {
 import Background    from '../components/backGroundComponent.js'
 import ProfileHeader from '../components/profileHeader.js'
 import ProfilePhoto  from '../components/profilephoto.js'
+import MemberInfo    from '../components/newMemberPrompt.js'
+import AddReceipt    from '../components/addReceipt.js'
 
 //Pass recipts and what not
   //Array of Objects for all the details needed for recipts
@@ -30,13 +32,14 @@ export default class ProfileScreen extends Component {
 
   render() {
     return (
-    <ScrollView>
-      <ScrollView contentContainer={styles.container}>
+    <ScrollView contentContainerStyle={{flex: 1}}>
+      <Background>
         <ProfileHeader username="@jamesftw"/>
-        <Background message={<Message value='James'/>}/>
-      </ScrollView>
+        <ProfilePhoto imageUrl={this.state.imageUrl}/>
+        <MemberInfo message="james"/>
 
-      <ProfilePhoto imageUrl={this.state.imageUrl}/>
+      </Background>
+      <AddReceipt />
     </ScrollView>
     )
   }
@@ -45,7 +48,8 @@ export default class ProfileScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    width: '100%',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
   }
 })
