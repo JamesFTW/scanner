@@ -11,20 +11,29 @@ import {
 
 export default class Background extends Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      newMember: true
+    }
+  }
+
   render() {
-    //This might not need to pass props
+    const children = this.props.children
+
     return (
-      <View style={styles.backGround}>
-        <Text style={{textAlign: 'center'}}>Hello World {this.props.message}</Text>
-      </View>
+      <ScrollView contentContainerStyle={styles.backGround}>
+        {children}
+      </ScrollView>
     )
   }
 }
 
 const styles = StyleSheet.create({
   backGround: {
-    backgroundColor: '#F2F2F2',
-    paddingTop: 80,
-    height: 1000
+    position: 'relative',
+    flexGrow: 1,
+    flexDirection: 'column',
+    backgroundColor: '#F2F2F2'
   }
 })
