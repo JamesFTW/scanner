@@ -24,19 +24,38 @@ export default class MemberInfo extends Component {
   }
 
   render() {
-    //This might not need to pass props
     return (
-      <View>
+      <View style={styles.container}>
         <Image style={styles.backGround} source={add_button}/>
+        <Text style={styles.title}>Add receipt.</Text>
+        <Text style={styles.description}>When you add receipts they will appear on your profile.</Text>
       </View>
     )
   }
 }
 
 const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+    marginTop: 70
+  },
   backGround: {
     marginTop: 10,
     marginBottom: 10
-    // alignSelf: 'center'
+  },
+  title: {
+    fontFamily: 'SanFranciscoText-Regular',
+    fontSize: 38,
+    fontWeight: 'normal',
+    color: '#333333'
+  },
+  description: {
+    fontFamily: 'SanFranciscoText-Regular',
+    marginTop: 10,
+    fontSize: 17,
+    fontWeight: 'normal',
+    color: '#333333',
+    alignSelf: 'center',
+    textAlign: 'center'
   }
 })
