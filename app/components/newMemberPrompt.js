@@ -37,7 +37,7 @@ export default class MemberInfo extends Component {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    marginTop: 70
+    marginTop: 80
   },
   backGround: {
     marginTop: 10,
@@ -47,12 +47,16 @@ const styles = StyleSheet.create({
     fontFamily: 'SanFranciscoText-Regular',
     fontSize: 38,
     fontWeight: 'normal',
-    color: '#333333'
+    color: '#333333',
+    marginTop: 10,
+    marginBottom: 10,
   },
   description: {
     fontFamily: 'SanFranciscoText-Regular',
     marginTop: 10,
     fontSize: 17,
+    paddingLeft: 5,
+    paddingRight: 5,
     fontWeight: 'normal',
     color: '#333333',
     alignSelf: 'center',
