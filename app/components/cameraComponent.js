@@ -57,10 +57,6 @@ export default class Camera extends Component {
     }
 
   }
-  /**************************************************************************************
-  In order to get the camera working have to make a new screen with everything built out.
-  Take photo button etc.
-  ****************************************************************************************/
 
   render() {
     //This might not need to pass props
