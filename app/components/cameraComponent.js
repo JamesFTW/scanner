@@ -1,7 +1,5 @@
-'use strict'
 
 import React, { Component } from 'react'
-import { Screen } from '@shoutem/ui'
 
 import {
   AppRegistry,
@@ -77,7 +75,9 @@ export default class Camera extends Component {
         />
         <View style={styles.photoBar}>
         <TouchableOpacity onPress={this.onClick} style={styles.capture}>
+          <View style={styles.test}>
             <Text style={{fontSize: 12}}> SNAP </Text>
+          </View>
         </TouchableOpacity>
         </View>
       </View>
@@ -88,8 +88,7 @@ export default class Camera extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
-    backgroundColor: 'black'
+    flexDirection: 'column'
   },
   preview: {
     flex: 1,
@@ -99,19 +98,18 @@ const styles = StyleSheet.create({
   capture: {
     flex: 0,
     backgroundColor: '#FFFFFF',
-    borderRadius: 5,
     padding: 15,
     opacity: 1,
     height: 75,
     width: 75,
-    borderRadius: 37.5,
+    borderRadius: 40,
     paddingHorizontal: 20,
     alignSelf: 'center',
-    margin: 10,
+    margin: 5,
     position: 'relative'
   },
   photoBar: {
-    backgroundColor: 'black',
+    backgroundColor: 'rgba(0,0,0,.5)',
     position: 'absolute',
     opacity: 0.5,
     bottom: 0,

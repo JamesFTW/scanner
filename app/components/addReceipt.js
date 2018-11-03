@@ -1,7 +1,5 @@
-'use strict'
 
 import React, { Component } from 'react'
-import { Screen } from '@shoutem/ui'
 
 import {
   AppRegistry,
