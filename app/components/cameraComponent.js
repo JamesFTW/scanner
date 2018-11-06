@@ -73,12 +73,14 @@ export default class Camera extends Component {
               console.log("barcode", barcodes)
             }}
         />
-        <View style={styles.photoBar}>
-        <TouchableOpacity onPress={this.onClick} style={styles.capture}>
-          <View style={styles.test}>
-            <Text style={{fontSize: 12}}> SNAP </Text>
-          </View>
-        </TouchableOpacity>
+        <View style={styles.photoContainer}>
+          <TouchableOpacity style={styles.photoBar}>
+            <TouchableOpacity onPress={this.onClick} style={styles.capture}>
+              <View style={styles.test}>
+                <Text style={{fontSize: 12}}> SNAP </Text>
+              </View>
+            </TouchableOpacity>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -99,7 +101,6 @@ const styles = StyleSheet.create({
     flex: 0,
     backgroundColor: '#FFFFFF',
     padding: 15,
-    opacity: 1,
     height: 75,
     width: 75,
     borderRadius: 40,
@@ -108,12 +109,14 @@ const styles = StyleSheet.create({
     margin: 5,
     position: 'relative'
   },
-  photoBar: {
-    backgroundColor: 'rgba(0,0,0,.5)',
+  photoContainer: {
     position: 'absolute',
-    opacity: 0.5,
     bottom: 0,
     width: '100%',
     justifyContent: 'center'
+  },
+  photoBar: {
+    backgroundColor: 'rgba(0,0,0,.4)',
+    width: '100%'
   }
 });
