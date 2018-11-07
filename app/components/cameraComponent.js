@@ -75,10 +75,8 @@ export default class Camera extends Component {
         />
         <View style={styles.photoContainer}>
           <TouchableOpacity style={styles.photoBar}>
-            <TouchableOpacity onPress={this.onClick} style={styles.capture}>
-              <View style={styles.test}>
-                <Text style={{fontSize: 12}}> SNAP </Text>
-              </View>
+            <TouchableOpacity style={styles.outterCapture}>
+              <TouchableOpacity onPress={this.onClick} style={styles.capture}/>
             </TouchableOpacity>
           </TouchableOpacity>
         </View>
@@ -98,13 +96,11 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   capture: {
-    flex: 0,
     backgroundColor: '#FFFFFF',
     padding: 15,
     height: 75,
     width: 75,
     borderRadius: 40,
-    paddingHorizontal: 20,
     alignSelf: 'center',
     margin: 5,
     position: 'relative'
@@ -118,5 +114,14 @@ const styles = StyleSheet.create({
   photoBar: {
     backgroundColor: 'rgba(0,0,0,.4)',
     width: '100%'
+  },
+  outterCapture: {
+    height: 84,
+    width: 84,
+    borderRadius: 42,
+    backgroundColor: 'rgba(255,250,250,.2)',
+    margin: 5,
+    alignSelf: 'center',
+    position: 'relative'
   }
 });
