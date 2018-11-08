@@ -16,7 +16,7 @@ import {
 
 import {RNCamera} from 'react-native-camera'
 
-const add_receipt = require('../img/add_receipt/Add_element.png')
+const back_button = require('../img/back_button/noun_back_636001.png')
 
 export default class Camera extends Component {
 
@@ -81,7 +81,7 @@ export default class Camera extends Component {
           </TouchableOpacity>
         </View>
       </View>
-    );
+    )
   }
 }
 
@@ -112,14 +112,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   photoBar: {
-    backgroundColor: 'rgba(0,0,0,.4)',
+    backgroundColor: 'rgba(0,0,0,.26)',
     width: '100%'
   },
   outterCapture: {
     height: 84,
     width: 84,
     borderRadius: 42,
-    backgroundColor: 'rgba(255,250,250,.2)',
+    backgroundColor: 'rgba(255,250,250,.22)',
     margin: 5,
     alignSelf: 'center',
     position: 'relative'
