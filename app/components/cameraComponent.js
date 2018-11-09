@@ -124,4 +124,4 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     position: 'relative'
   }
-});
+})
