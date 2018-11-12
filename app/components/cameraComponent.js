@@ -57,7 +57,6 @@ export default class Camera extends Component {
   }
 
   render() {
-    //This might not need to pass props
     return (
       <View style={styles.container}>
         <RNCamera
