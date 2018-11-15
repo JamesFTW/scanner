@@ -19,6 +19,7 @@ export default class Background extends Component {
   }
 
   render() {
+    //Comment for later
     const children = this.props.children
 
     return (
