@@ -64,7 +64,6 @@ export default class Camera extends Component {
             flashMode={RNCamera.Constants.FlashMode.on}
             permissionDialogTitle={'Permission to use camera'}
             permissionDialogMessage={'We need your permission to use your camera phone'}
-            }
         />
         <View style={styles.photoContainer}>
           <TouchableOpacity style={styles.photoBar}>
