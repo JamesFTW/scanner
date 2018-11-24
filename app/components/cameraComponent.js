@@ -27,7 +27,7 @@ export default class Camera extends Component {
     }
   }
 
-  _requestPermissions = async () => {
+  requestPermissions = async () => {
     if (Platform.OS === 'android') {
       const result = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.CAMERA)
       return result === PermissionsAndroid.RESULTS.GRANTED || result === true
@@ -38,13 +38,9 @@ export default class Camera extends Component {
   componentDidMount() {
     ({ _, status }) => {
       if (status !== 'PERMISSION_GRANTED') {
-        this._requestPermissions()
+        this.requestPermissions()
       }
     }
-  }
-
-  _onBarCodeRead = (e) => {
-    console.log(`Barcode Found! Type: ${e.type}\nData: ${e.data}`)
   }
 
   onClick = async () => {
