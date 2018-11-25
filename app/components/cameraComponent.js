@@ -46,13 +46,13 @@ export default class Camera extends Component {
   onClick = async () => {
     if (this.camera) {
       const options = {
-        quality: 0.5,
+        quality: 1,
         base64: true,
         forceUpOrientation: true,
         fixOrientation: true
       }
       const data = await this.camera.takePictureAsync(options)
-      
+
       return CameraRoll.saveToCameraRoll(data.uri, 'photo')
     }
   }
