@@ -3,9 +3,9 @@ if(process.env.NODE_ENV === 'development') {
    require('dotenv').config()
  }
 
-const multer = require('multer')
+const multer   = require('multer')
 const multerS3 = require('multer-s3')
-const aws = require('aws-sdk')
+const aws      = require('aws-sdk')
 
 const accessKey = process.env.AWSAccessKeyId
 const secretKey = process.env.AWSSecretKey
