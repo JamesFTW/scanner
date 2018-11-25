@@ -10,7 +10,4 @@ const db  = pgp(process.env.DATABASE_URL)
 
 pg.defaults.ssl = true
 
-module.exports = {
-  db : db,
-  s3 : s3
-}
+module.exports = {db, s3}
