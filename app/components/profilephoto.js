@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import {
   StyleSheet,
@@ -9,7 +9,7 @@ import {
   View
 } from 'react-native';
 
-export default class ProfilePhoto extends Component {
+export default class ProfilePhoto extends PureComponent {
 
   render() {
     return (

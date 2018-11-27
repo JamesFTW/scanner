@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import {
   StyleSheet,
@@ -11,7 +11,7 @@ import {
 
 const profileHeader = require('../img/Profile_header/Profile_header.png')
 
-export default class ProfileHeader extends Component {
+export default class ProfileHeader extends PureComponent {
 
   render() {
     return (

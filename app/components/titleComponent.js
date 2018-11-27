@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import {
   StyleSheet,
@@ -11,7 +11,7 @@ import {
 
 const titleHeader = require('../img/title/title.png')
 
-export default class TitleComponent extends Component {
+export default class TitleComponent extends PureComponent {
 
   constructor(props) {
     super(props)
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   text: {
-    color: '#F2F2F2',
+    color: '#FFFFFF',
     position: 'absolute',
     marginTop: 20,
     backgroundColor: 'rgba(0,0,0,0)',

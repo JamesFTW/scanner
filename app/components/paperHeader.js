@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import {
   StyleSheet,
@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 
-export default class PaperHeader extends Component {
+export default class PaperHeader extends PureComponent {
 
   render() {
     return (
