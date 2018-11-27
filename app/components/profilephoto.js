@@ -10,12 +10,20 @@ import {
 } from 'react-native';
 
 export default class ProfilePhoto extends PureComponent {
-
   render() {
+    const photoDems = StyleSheet.create({
+      photo: {
+        height: this.props.height,
+        width: this.props.height,
+        marginTop: 5,
+        borderRadius: this.props.height/2,
+        alignSelf: 'center'
+      }
+    })
     return (
       <View style={styles.profileWrapper}>
         <View style={styles.photoPlaceHolder}>
-          <Image style={styles.photo} source={this.props.imageUrl} />
+          <Image height={this.props.height} style={photoDems.photo} source={this.props.imageUrl} />
         </View>
       </View>
     )
@@ -27,13 +35,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#F2F2F2',
     paddingTop: 80,
     height: 1000
-  },
-  photo: {
-    height: 104.64,
-    width: 104.64,
-    marginTop: 5,
-    borderRadius: 105/2,
-    alignSelf: 'center'
   },
   photoPlaceHolder: {
     width: 116,

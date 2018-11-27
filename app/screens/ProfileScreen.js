@@ -35,7 +35,7 @@ export default class ProfileScreen extends Component {
     <ScrollView contentContainerStyle={{flex: 1}}>
       <Background>
         <ProfileHeader username="@jamesftw"/>
-        <ProfilePhoto imageUrl={this.state.imageUrl}/>
+        <ProfilePhoto height={105} imageUrl={this.state.imageUrl}/>
         <MemberInfo message="james"/>
 
       </Background>
