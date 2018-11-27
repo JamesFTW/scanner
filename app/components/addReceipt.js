@@ -2,13 +2,9 @@
 import React, { Component } from 'react'
 
 import {
-  AppRegistry,
-  Dimensions,
   StyleSheet,
-  Text,
   ScrollView,
   Image,
-  Button,
   TouchableOpacity,
   View,
   CameraRoll
