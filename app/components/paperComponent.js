@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 30,
     marginLeft: 11,
     marginRight: 11,
-    marginTop: 10,
-    padding: 10
+    marginTop: 10
   }
 })
