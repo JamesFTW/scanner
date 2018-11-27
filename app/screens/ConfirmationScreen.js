@@ -27,7 +27,9 @@ export default class ConfirmationScreen extends Component {
     <ScrollView contentContainerStyle={{flex: 1}}>
       <TitleComponent title={this.state.title}/>
       <TitleBackground>
-        <PaperComponent/>
+        <PaperComponent>
+          <PaperHeader/>
+        </PaperComponent>
       </TitleBackground>
     </ScrollView>
     )
