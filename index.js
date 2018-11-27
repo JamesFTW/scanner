@@ -1,6 +1,7 @@
 
-import { AppRegistry } from 'react-native';
-import ProfileScreen   from './app/screens/ProfileScreen'
-import Camera          from './app/containers/cameraComponent.js'
+import { AppRegistry }    from 'react-native';
+import ProfileScreen      from './app/screens/ProfileScreen'
+import ConfirmationScreen from './app/screens/ConfirmationScreen'
+import TitleComponent     from './app/components/titleComponent.js'
 
-AppRegistry.registerComponent('scanner', () => Camera);
+AppRegistry.registerComponent('scanner', () => ConfirmationScreen);
