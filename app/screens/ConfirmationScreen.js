@@ -11,6 +11,7 @@ import {
 
 import TitleBackground from '../components/titleBackGround.js'
 import PaperComponent  from '../components/paperComponent.js'
+import PaperHeader     from '../components/paperHeader.js'
 import TitleComponent  from '../components/titleComponent.js'
 
 export default class ConfirmationScreen extends Component {
