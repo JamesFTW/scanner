@@ -18,7 +18,6 @@ import ItemComponent   from '../components/itemsComponent.js'
 import { payLoad }     from '../data/fakeapi.js'
 
 const profilePhoto = require('../img/myProfilePic.jpg')
-const total = 0
 
 export default class ConfirmationScreen extends Component {
   constructor(props) {
@@ -34,15 +33,22 @@ export default class ConfirmationScreen extends Component {
     //this is where I would fetch from orc api
     this.setState({order: payLoad}, () => {
       const order = this.state.order
-
-      order.map((item) => {
-        total += item.price
-      })
+      const total = this.getTotal(order)
 
       this.setState({
         total: total.toFixed(2)
       })
     })
+  }
+
+  getTotal = (order) => {
+    let total = 0
+    
+    order.map((item) => {
+      total += item.price
+    })
+
+    return total
   }
 
   render() {
