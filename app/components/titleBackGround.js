@@ -31,7 +31,6 @@ export default class TitleBackground extends Component {
 
 const styles = StyleSheet.create({
   backGround: {
-    position: 'relative',
     flexGrow: 1,
     flexDirection: 'column',
     backgroundColor: '#E0E0E0'
