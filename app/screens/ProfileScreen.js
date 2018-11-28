@@ -11,7 +11,7 @@ import {
 
 import Background    from '../components/backGroundComponent.js'
 import ProfileHeader from '../components/profileHeader.js'
-import ProfilePhoto  from '../components/profilephoto.js'
+import ProfilePhoto  from '../components/profilePhoto.js'
 import MemberInfo    from '../components/newMemberPrompt.js'
 import AddReceipt    from '../components/addReceipt.js'
 
