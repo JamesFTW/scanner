@@ -1,12 +1,12 @@
 export const payLoad = [
   {
   order: "Bacon Burger",
-  price: 2.00,
+  price: 2.10,
   quanity: 1
   },
   {
   order: "Fries",
-  price: 1.23,
+  price: 1.43,
   quanity: 1
   },
   {

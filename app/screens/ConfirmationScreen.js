@@ -15,15 +15,16 @@ import PaperHeader     from '../components/paperHeader.js'
 import TitleComponent  from '../components/titleComponent.js'
 import ProfilePhoto    from '../components/profilePhoto.js'
 import ItemComponent   from '../components/itemsComponent.js'
+import Totals          from '../components/totalsComponent.js'
 import { payLoad }     from '../data/fakeapi.js'
-
-const profilePhoto = require('../img/myProfilePic.jpg')
 
 export default class ConfirmationScreen extends Component {
   constructor(props) {
     super(props)
     this.state = {
       title: "Select Food Item",
+      subTotal: 0,
+      tax: 0,
       total: 0,
       order: []
     }
@@ -33,26 +34,44 @@ export default class ConfirmationScreen extends Component {
     //this is where I would fetch from orc api
     this.setState({order: payLoad}, () => {
       const order = this.state.order
-      const total = this.getTotal(order)
+
+      const subTotal = this.getSubTotal(order).toFixed(2)
+      const tax = this.getTax(subTotal)
+      const total = this.getTotal(subTotal, tax)
 
       this.setState({
-        total: total.toFixed(2)
+        subTotal,
+        tax,
+        total
       })
     })
   }
 
-  getTotal = (order) => {
+  getSubTotal = (order) => {
     let total = 0
-    
+
     order.map((item) => {
-      total += item.price
+      total += item.quanity * (parseFloat(item.price))
     })
 
     return total
   }
 
+  getTax = (subTotal) => {
+    const taxes = subTotal * .08
+    return taxes.toFixed(2)
+  }
+
+  getTotal = (subTotal, tax) => {
+    const total = Number(subTotal) + Number(tax)
+
+    return total.toFixed(2)
+  }
+
   render() {
-    const order = this.state.order
+    const { order, subTotal, tax, total } = this.state
+
+    console.log(this.state)
 
     return (
     <ScrollView contentContainerStyle={{flex: 1}}>
@@ -69,6 +88,10 @@ export default class ConfirmationScreen extends Component {
               />
             )
           })}
+          <Totals
+            SUBTOTAL={subTotal}
+            TAXES={tax}
+            TOTAL={total}/>
         </PaperComponent>
       </TitleBackground>
     </ScrollView>

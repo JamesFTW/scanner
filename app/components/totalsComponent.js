@@ -20,7 +20,7 @@ export default class Totals extends PureComponent {
         <View style={styles.flexContainer}>
           <Text style={styles.text}>{this.props.SUBTOTAL}</Text>
           <Text style={styles.text}>{this.props.TAXES}</Text>
-          <Text style={styles.text}>{this.props.TOTAL}</Text>
+          <Text style={styles.total}>{this.props.TOTAL}</Text>
         </View>
       </View>
     )
@@ -29,12 +29,11 @@ export default class Totals extends PureComponent {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center'
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-end'
   },
   flexContainer: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-between',
     marginBottom: 20,
     marginTop: 30
   },
@@ -46,5 +45,22 @@ const styles = StyleSheet.create({
     marginRight: 20,
     marginTop: 10,
     textAlign: 'right'
-  }
+  },
+  prices: {
+    color: '#ADADAD',
+    fontFamily: 'SanFranciscoText-SemiBold',
+    fontSize: 18,
+    marginLeft: 15,
+    marginRight: 20,
+    marginTop: 10
+  },
+  total: {
+    color: '#2D9CDB',
+    fontFamily: 'SanFranciscoText-SemiBold',
+    fontSize: 18,
+    marginLeft: 15,
+    marginRight: 20,
+    marginTop: 10,
+    textAlign: 'right'
+  },
 })
