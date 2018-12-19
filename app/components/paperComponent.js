@@ -32,13 +32,15 @@ export default class PaperComponent extends PureComponent {
 const styles = StyleSheet.create({
   backGround: {
     position: 'relative',
-    flexGrow: 1,
+    display: 'flex',
+    height: '100%',
     flexDirection: 'column',
     backgroundColor: '#FFFFFF',
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
     marginLeft: 11,
     marginRight: 11,
-    marginTop: 10
+    marginTop: 10,
+    marginBottom: '90%'
   }
 })
