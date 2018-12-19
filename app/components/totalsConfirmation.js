@@ -54,22 +54,24 @@ const styles = StyleSheet.create({
     color: '#6FCF97',
     fontSize: 18,
     marginTop: 10,
-    marginLeft: 50
+    marginLeft: 40
   },
   check: {
     marginLeft: 10,
     marginTop: 10
   },
   backGround: {
+    position: 'absolute',
     width: '100%',
     height: 98.01,
     backgroundColor: '#F2F2F2',
-    borderRadius: 10,
+    borderRadius: 5,
     display: 'flex',
-    top: 50,
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.25,
-    shadowRadius: 2
+    shadowRadius: 8,
+    bottom: 0,
+    marginBottom: 100,
   },
   title: {
     marginTop: 10,
