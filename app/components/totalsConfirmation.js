@@ -20,11 +20,15 @@ export default class TotalConfirmation extends Component {
         </View>
         <View style={styles.flexButtons}>
           <View style={styles.line}></View>
+          <TouchableOpacity style={styles.noButton}>
             <Image style={styles.check} source={x} />
-          <Text style={styles.no}>No</Text>
+            <Text style={styles.no}>No</Text>
+          </TouchableOpacity>
           <View style={styles.line}></View>
+          <TouchableOpacity style={styles.yesButton}>
             <Image style={styles.check} source={checkmark} />
-          <Text style={styles.yes}>Yes</Text>
+            <Text style={styles.yes}>Yes</Text>
+          </TouchableOpacity>
         </View>
       </View>
     )
@@ -37,6 +41,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: '50%'
   },
+  yesButton: {
+    display: 'flex',
+    flexDirection: 'row',
+  },
+  noButton: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginRight: 85
+  },
   line: {
     borderRightWidth: 1,
     borderRightColor: '#BDBDBD'
@@ -44,15 +57,14 @@ const styles = StyleSheet.create({
   no : {
     fontFamily: 'SanFranciscoText-Bold',
     color: '#EB5757',
-    fontSize: 18,
+    fontSize: 20,
     marginTop: 10,
-    paddingRight: '24%',
-    marginLeft: 50
+    marginLeft: 70
   },
   yes: {
     fontFamily: 'SanFranciscoText-Bold',
     color: '#6FCF97',
-    fontSize: 18,
+    fontSize: 20,
     marginTop: 10,
     marginLeft: 40
   },

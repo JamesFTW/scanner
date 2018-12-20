@@ -64,18 +64,16 @@ export default class ConfirmationScreen extends Component {
 
   getTotal = (subTotal, tax) => {
     const total = Number(subTotal) + Number(tax)
-
     return total.toFixed(2)
   }
 
   render() {
     const { order, subTotal, tax, total } = this.state
 
-    console.log(this.state)
-
     return (
-    <ScrollView contentContainerStyle={{flex: 1}}>
+    <View contentContainerStyle={{flex: 1}}>
       <TitleComponent title={this.state.title}/>
+      <ScrollView>
       <TitleBackground>
         <PaperComponent>
           <PaperHeader/>
@@ -94,7 +92,9 @@ export default class ConfirmationScreen extends Component {
             TOTAL={total}/>
         </PaperComponent>
       </TitleBackground>
-    </ScrollView>
+      </ScrollView>
+        <TotalConfirmation/>
+    </View>
     )
   }
 }
