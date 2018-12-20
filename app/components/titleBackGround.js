@@ -32,6 +32,6 @@ export default class TitleBackground extends Component {
 const styles = StyleSheet.create({
   backGround: {
     height: '100%',
-    backgroundColor: '#E0E0E0'
+    backgroundColor: '#F2F2F2'
   }
 })
