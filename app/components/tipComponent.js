@@ -15,17 +15,8 @@ const FifteenPercent = '20%'
 const OTHER = 'Other'
 
 export default class TipComponent extends Component {
-  constructor() {
-    super()
-    this.state = {
-      tipSelected: false,
-      tipPercent: 0
-    }
-  }
-  onTip = () => {
-    console.log(this.props.onTip)
-  }
   render() {
+    const { onTip } = this.props
 
     const tipTypes = [
       NO_TIP,
@@ -37,16 +28,18 @@ export default class TipComponent extends Component {
       if(type === 'Other') {
         return (
           <TouchableOpacity
-            ref={i.toString()}
             key={i.toString()}
-            onPress={() => console.log(i.toString())}
+            onPress={() => onTip(i.toString())}
             style={styles.other}>
             <Text style={styles.button}>{type}</Text>
           </TouchableOpacity>
         )
       } else {
         return (
-          <TouchableOpacity key={i.toString()} onPress={() => console.log(i.toString())} style={styles.buttonBorader}>
+          <TouchableOpacity
+            key={i.toString()}
+            onPress={() => onTip(i.toString())}
+            style={styles.buttonBorader}>
             <Text style={styles.button}>{type}</Text>
           </TouchableOpacity>
         )
