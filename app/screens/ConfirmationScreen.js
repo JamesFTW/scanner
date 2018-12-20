@@ -9,14 +9,15 @@ import {
   View
 } from 'react-native';
 
-import TitleBackground from '../components/titleBackGround.js'
-import PaperComponent  from '../components/paperComponent.js'
-import PaperHeader     from '../components/paperHeader.js'
-import TitleComponent  from '../components/titleComponent.js'
-import ProfilePhoto    from '../components/profilePhoto.js'
-import ItemComponent   from '../components/itemsComponent.js'
-import Totals          from '../components/totalsComponent.js'
-import { payLoad }     from '../data/fakeapi.js'
+import TitleBackground   from '../components/titleBackGround.js'
+import PaperComponent    from '../components/paperComponent.js'
+import PaperHeader       from '../components/paperHeader.js'
+import TitleComponent    from '../components/titleComponent.js'
+import ProfilePhoto      from '../components/profilePhoto.js'
+import ItemComponent     from '../components/itemsComponent.js'
+import Totals            from '../components/totalsComponent.js'
+import { payLoad }       from '../data/fakeapi.js'
+import TotalConfirmation from '../components/totalsConfirmation.js'
 
 export default class ConfirmationScreen extends Component {
   constructor(props) {
