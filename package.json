@@ -12,7 +12,9 @@
     "db:rollback": "sequelize db:migrate:undo"
   },
   "dependencies": {
+    "acorn": "^6.0.4",
     "aws-sdk": "^2.343.0",
+    "eslint": "^5.10.0",
     "express": "^4.16.4",
     "helmet": "^3.9.0",
     "multer": "^1.4.1",
