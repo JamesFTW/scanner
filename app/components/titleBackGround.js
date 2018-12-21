@@ -10,14 +10,6 @@ import {
 } from 'react-native';
 
 export default class TitleBackground extends Component {
-
-  constructor(props) {
-    super(props)
-    this.state = {
-      newMember: true
-    }
-  }
-
   render() {
     const children = this.props.children
 
