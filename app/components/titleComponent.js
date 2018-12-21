@@ -10,22 +10,19 @@ import {
 } from 'react-native';
 
 const titleHeader = require('../img/title/title.png')
+const back_button = require('../img/back_button/noun_back_636001.png')
 
 export default class TitleComponent extends PureComponent {
-
-  constructor(props) {
-    super(props)
-    this.state = {
-      newMember: true
-    }
-  }
-
   render() {
-    const children = this.props.children
+    const { children, backButton, backPress } = this.props
 
     return (
       <View style={styles.container}>
-        <Image source={titleHeader} />
+        {backButton?
+          <TouchableOpacity onPress={() => backPress()} style={styles.backButton}>
+            <Image source={back_button}/>
+          </TouchableOpacity>: null}
+        <Image source={titleHeader}/>
         <Text style={styles.text}>
           <Text>{this.props.title}</Text>
         </Text>
@@ -35,9 +32,19 @@ export default class TitleComponent extends PureComponent {
 }
 
 const styles = StyleSheet.create({
+  backButton: {
+    position: 'absolute',
+    left: 0,
+    top: 15,
+    zIndex: 103,
+    marginLeft: 10
+  },
   container: {
     position: 'relative',
-    alignItems: 'center'
+    alignItems: 'center',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center'
   },
   text: {
     color: '#FFFFFF',
