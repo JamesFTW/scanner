@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import {
   StyleSheet,
@@ -7,8 +7,9 @@ import {
   Image,
   TouchableOpacity,
   View
-} from 'react-native';
+} from 'react-native'
 
+import { Link }          from "react-router-native"
 import TitleBackground   from '../components/titleBackGround.js'
 import PaperComponent    from '../components/paperComponent.js'
 import PaperHeader       from '../components/paperHeader.js'
@@ -58,6 +59,16 @@ export default class ConfirmationScreen extends Component {
     return total
   }
 
+  onConfirmation = () => {
+    const { total } = this.state
+    this.props.history.push({
+      pathname: '/tip',
+      state: {
+        total
+      }
+    })
+  }
+
   getTax = (subTotal) => {
     const taxes = subTotal * .08
     return taxes.toFixed(2)
@@ -94,7 +105,9 @@ export default class ConfirmationScreen extends Component {
         </PaperComponent>
       </TitleBackground>
       </ScrollView>
-        <TotalConfirmation/>
+        <TotalConfirmation yes={this.onConfirmation}>
+          <Link to='/tip'/>
+        </TotalConfirmation>
     </View>
     )
   }
