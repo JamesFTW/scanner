@@ -13,6 +13,7 @@ const x         = require('../img/x/Group.png')
 
 export default class TotalConfirmation extends Component {
   render() {
+    const { yes, no } = this.props
     return (
       <View style={styles.backGround}>
         <View style={styles.title}>
@@ -25,9 +26,11 @@ export default class TotalConfirmation extends Component {
             <Text style={styles.no}>No</Text>
           </TouchableOpacity>
           <View style={styles.line}></View>
-          <TouchableOpacity style={styles.yesButton}>
-            <Image style={styles.check} source={checkmark} />
-            <Text style={styles.yes}>Yes</Text>
+          <TouchableOpacity
+            onPress={() => yes()}
+            style={styles.yesButton}>
+              <Image style={styles.check} source={checkmark} />
+              <Text style={styles.yes}>Yes</Text>
           </TouchableOpacity>
         </View>
       </View>
